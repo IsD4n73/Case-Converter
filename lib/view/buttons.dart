@@ -25,27 +25,63 @@ class _ButtonWidgetsState extends State<ButtonWidgets> {
       runSpacing: 10,
       children: [
         ElevatedButton(
-
           onPressed: () {
-
             setState(() {
-
-             widget.stringController.text  =
-
-                 widget.stringController.text.snake_case;
-
+              widget.stringController.text =
+                  widget.stringController.text.snakeCase;
             });
-
           },
-
           child: const Text("snake_case"),
-
         ),
         ElevatedButton(
           onPressed: () {
             setState(() {
               widget.stringController.text =
-
+                  widget.stringController.text.camelCase;
+            });
+          },
+          child: const Text("camelCase"),
+        ),
+        ElevatedButton(
+          onPressed: () {
+            setState(() {
+              widget.stringController.text =
+                  widget.stringController.text.titleCase;
+            });
+          },
+          child: const Text("Title Case"),
+        ),
+        ElevatedButton(
+          onPressed: () {
+            setState(() {
+              widget.stringController.text =
+                  widget.stringController.text.dotCase;
+            });
+          },
+          child: const Text("dot.case"),
+        ),
+        ElevatedButton(
+          onPressed: () {
+            setState(() {
+              widget.stringController.text =
+                  widget.stringController.text.pathCase;
+            });
+          },
+          child: const Text("path/case"),
+        ),
+        ElevatedButton(
+          onPressed: () {
+            setState(() {
+              widget.stringController.text =
+                  widget.stringController.text.paramCase;
+            });
+          },
+          child: const Text("param-case"),
+        ),
+        ElevatedButton(
+          onPressed: () {
+            setState(() {
+              widget.stringController.text =
                   widget.stringController.text.toUpperCase();
             });
           },
