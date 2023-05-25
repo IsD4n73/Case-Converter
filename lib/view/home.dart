@@ -2,6 +2,7 @@ import 'package:case_converter/view/buttons.dart';
 import 'package:flutter/material.dart';
 
 import '../controller/string_controller.dart';
+import 'footer_widget.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});
@@ -20,6 +21,7 @@ class _MyHomePageState extends State<MyHomePage> {
         title: const Text("Case Converter"),
         centerTitle: true,
       ),
+      bottomSheet: const FooterWidget(),
       body: Center(
         child: SingleChildScrollView(
           child: Column(
