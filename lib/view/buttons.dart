@@ -24,10 +24,26 @@ class _ButtonWidgetsState extends State<ButtonWidgets> {
       runSpacing: 10,
       children: [
         ElevatedButton(
+
+          onPressed: () {
+
+            setState(() {
+
+              widget.stringController.text =
+
+                  widget.stringController.text.toUpperCase();
+
+            });
+
+          },
+
+          child: const Text("snake_case"),
+
+        ),
+        ElevatedButton(
           onPressed: () {
             setState(() {
-              widget.stringController.text =
-                  widget.stringController.text.toUpperCase();
+              
             });
           },
           child: const Text("UPPERCASE"),
