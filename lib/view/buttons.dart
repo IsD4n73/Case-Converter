@@ -29,9 +29,9 @@ class _ButtonWidgetsState extends State<ButtonWidgets> {
 
             setState(() {
 
-              widget.stringController.text =
+             widget.stringController.text  =
 
-                  widget.stringController.text.toUpperCase();
+                 widget.stringController.text.snake_case;
 
             });
 
@@ -43,7 +43,9 @@ class _ButtonWidgetsState extends State<ButtonWidgets> {
         ElevatedButton(
           onPressed: () {
             setState(() {
-              
+              widget.stringController.text =
+
+                  widget.stringController.text.toUpperCase();
             });
           },
           child: const Text("UPPERCASE"),
