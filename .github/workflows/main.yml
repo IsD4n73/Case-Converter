@@ -32,7 +32,7 @@ jobs:
 
       - run: flutter build apk --split-per-abi --release
 
-      - run: flutter build web --base-href "/" 
+      - run: flutter build web --base-href "/Case-Converter/" 
 
       - uses: peaceiris/actions-gh-pages@v3
 
