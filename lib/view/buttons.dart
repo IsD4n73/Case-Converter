@@ -22,7 +22,7 @@ class _ButtonWidgetsState extends State<ButtonWidgets> {
     String string = widget.stringController.text;
 
     return Wrap(
-      //alignment: WrapAlignment.spaceBetween,
+      alignment: WrapAlignment.center,
       spacing: 10,
       runSpacing: 10,
       children: [
