@@ -72,6 +72,23 @@ class _ButtonWidgetsState extends State<ButtonWidgets> {
           child: const Text("path/case"),
         ),
         ElevatedButton(
+
+          onPressed: () {
+
+            setState(() {
+
+              widget.stringController.text =
+
+                  widget.stringController.text.constantCase;
+
+            });
+
+          },
+
+          child: const Text("CONSTANT_CASE"),
+
+        ),
+        ElevatedButton(
           onPressed: () {
             setState(() {
               widget.stringController.text =
