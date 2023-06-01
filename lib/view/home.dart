@@ -21,7 +21,7 @@ class _MyHomePageState extends State<MyHomePage> {
         title: const Text("Case Converter"),
         centerTitle: true,
       ),
-      bottomSheet: const FooterWidget(),
+      //bottomSheet: const FooterWidget(),
       body: Center(
         child: SingleChildScrollView(
           child: Column(
