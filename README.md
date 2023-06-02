@@ -1,4 +1,4 @@
-# case_converter
+# Case Converter
 
 Convert in:
 - UPPERCASE
